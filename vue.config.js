@@ -1,3 +1,5 @@
 module.exports = {
-    publicPatch: '/PortfolioTwo'
-}
+    publicPath: process.env.NODE_ENV === 'production'
+      ? '/my-project/'
+      : '/'
+  }
